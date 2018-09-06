@@ -2,7 +2,7 @@ var map;
 var service;
 var infowindow;
 var geocoder;
-var address = "UCLA";
+var address = "Alabama";
 
 window.onload = function () {
 
