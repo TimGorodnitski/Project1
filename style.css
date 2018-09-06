@@ -1,10 +1,20 @@
-#map{
-    height:90%;
-    width:90%;
-    margin:40px auto;
+#container {
+    height: 100%
 }
 
+.card {
+    display: inline-block;
+}
+
+#map{
+    height:50%;
+    width:50%;
+    margin:40px auto;
+    display: inline-block;
+    z-index: 1;
+}
 
 html, body {
+    background-color: sandybrown;
     height:100%;
 }
