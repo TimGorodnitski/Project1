@@ -6,7 +6,7 @@
     display: inline-block;
 }
 
-#map{
+.map{
     height:50%;
     width:50%;
     margin:40px auto;
