@@ -1,153 +1,335 @@
 <!DOCTYPE HTML>
-<!--
-	Multiverse by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
 <html>
-	<head>
-		<title>Night Theme</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+	<title>Night Crawl</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+	 crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDK06MpCGGG6dvjsnPt4m91gW0TMB0GueY&callback=initMap&libraries=places"
+	 async defer></script>
+</head>
 
-				<!-- Header -->
-					<header id="header">
-						<h1><a href="index.html"><strong>Night Theme</strong> Fun never stops</a></h1>
-						<nav>
-							<ul>
-								<li><a href="#footer" class="icon fa-info-circle">About</a></li>
-							</ul>
-						</nav>
-					</header>
+<body class="is-preload">
 
-				<!-- Main -->
-					<div id="main">
-						<article class="thumb">
-							<a href="images/fulls/01.jpg" class="image"><img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/san-diego-downtown-winter-night-jeff-chen.jpg" alt="" /></a>
-							<h2>San Diego, CA</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/02.jpg" class="image"><img src="https://www.rentphilly.com/wp-content/uploads/2016/12/City-Hall-at-Night.jpg" alt="" /></a>
-							<h2>Philadelphia,PA</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/03.jpg" class="image"><img src="https://marksdiamonds.com/wp-content/uploads/2017/07/denver-skyline-1201x800.jpg" alt="" /></a>
-							<h2>Denver, CO</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/04.jpg" class="image"><img src="http://www.weedist.com/wp-content/uploads/2013/03/portland.jpg" alt="" /></a>
-							<h2>Portland, OR</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/05.jpg" class="image"><img src="https://www.meditationinmass.org/wp-content/uploads/2017/03/boston-boston-ma-massachusetts-massachusetts-usa-united-states-town-night-lighting-embankment-paving-stones-river-house-buildings-skyscraper.jpg" alt="" /></a>
-							<h2>Boston, MA</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/06.jpg" class="image"><img src="https://farm8.staticflickr.com/7532/15611597124_32f8ff2f2e_b.jpg" alt="" /></a>
-							<h2>Seattle, WA</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/07.jpg" class="image"><img src="https://images.fineartamerica.com/images-medium-large-5/kansas-city-skyline-at-night-kc-downtown-color-panorama-jon-holiday.jpg" alt="" /></a>
-							<h2>Kansas City, MO</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/08.jpg" class="image"><img src="http://images.raleighskyline.com/images/2015/late-summer-early-fall-2015-in-raleigh/raleigh_earlyfall_2015_raleighskyline.com_29.jpg" alt="" /></a>
-							<h2>Raleigh, NC</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/09.jpg" class="image"><img src="https://i.pinimg.com/736x/f8/1e/d0/f81ed07578cc752201c1103f49c4a0bf--anna-lee-winter-night.jpg" alt="" /></a>
-							<h2>Milwaukee, WI</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/10.jpg" class="image"><img src="http://images.cityhdwallpapers.com/images/1680x1050/New%20York%20city%20light%20building%20wallpaper.jpg" alt="" /></a>
-							<h2>New York, NY</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/11.jpg" class="image"><img src="https://sc-events.s3.amazonaws.com/4209806/main.jpg" alt="" /></a>
-							<h2>San Francisco, CA</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-						<article class="thumb">
-							<a href="images/fulls/12.jpg" class="image"><img src="https://i.ytimg.com/vi/UeW5WCsN_OI/maxresdefault.jpg" alt="" /></a>
-							<h2>Chicago, IL</h2>
-							<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
-						</article>
-					</div>
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-				<!-- Footer -->
-					<footer id="footer" class="panel">
-						<div class="inner split">
-							<div>
-								<section>
-									<h2>Magna feugiat sed adipiscing</h2>
-									<p>Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum eget quis orci mattis aliquet. Maecenas fringilla et ante at lorem et ipsum. Dolor nulla eu bibendum sapien. Donec non pharetra dui. Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum.</p>
-								</section>
-								<section>
-									<h2>Follow me on ...</h2>
-									<ul class="icons">
-										<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-										<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-										<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-										<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
-										<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
-										<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									</ul>
-								</section>
-								<p class="copyright">
-									&copy; Unttled. Design: <a href="http://html5up.net">HTML5 UP</a>.
-								</p>
-							</div>
-							<div>
-								<section>
-									<h2>Get in touch</h2>
-									<form method="post" action="#">
-										<div class="fields">
-											<div class="field half">
-												<input type="text" name="name" id="name" placeholder="Name" />
-											</div>
-											<div class="field half">
-												<input type="text" name="email" id="email" placeholder="Email" />
-											</div>
-											<div class="field">
-												<textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send" class="primary" /></li>
-											<li><input type="reset" value="Reset" /></li>
-										</ul>
-									</form>
-								</section>
-							</div>
-						</div>
-					</footer>
+		<!-- Header -->
+		<header id="header">
+			<h1><a href="index.html" class="icon fa fa-moon-o"><strong>Night Crawl</strong></a></h1>
+			<nav>
+				<ul>
+					<li>
+						<form class="form-inline">
+							<input class="form-control mr-sm-2" type="search" placeholder="City" aria-label="Search">
+							<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+						</form>
+					</li>
+					<li><a href="#MapLink" class="icon fa-globe">Map</a></li>
+					<li><a href="#AboutUsLink" class="icon fa-info-circle">About Us</a></li>
+					<li><a href="#FooterLink" class="icon fa-envelope-o">Contact Us</a></li>
+				</ul>
+			</nav>
+		</header>
 
+		<!-- Main -->
+		<div id="main">
+			<article class="thumb">
+				<a href="images/fulls/02.jpg" class="image"><img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/los-angeles-skyline-night-from-the-east-jon-holiday.jpg"
+					 alt="" /></a>
+				<h2>Los Angeles, CA</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/10.jpg" class="image"><img src="http://images.cityhdwallpapers.com/images/1680x1050/New%20York%20city%20light%20building%20wallpaper.jpg"
+					 alt="" /></a>
+				<h2>New York, NY</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/11.jpg" class="image"><img src="https://sc-events.s3.amazonaws.com/4209806/main.jpg" alt="" /></a>
+				<h2>San Francisco, CA</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/02.jpg" class="image"><img src="https://www.itsupportmiami.com/wp-content/uploads/2016/09/Downtown-Miami-Night-600x401.jpg"
+					 alt="" /></a>
+				<h2>Miami, FL</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/02.jpg" class="image"><img src="https://avatars.mds.yandex.net/get-pdb/199965/0a4d1710-3502-4b88-99e6-fc9da79e7683/s1200"
+					 alt="" /></a>
+				<h2>Las Vegas, NV</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/12.jpg" class="image"><img src="https://i.ytimg.com/vi/UeW5WCsN_OI/maxresdefault.jpg" alt="" /></a>
+				<h2>Chicago, IL</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/02.jpg" class="image"><img src="http://drifterjackshostel.com/wp-content/uploads/2015/10/Austin.jpg"
+					 alt="" /></a>
+				<h2>Austin, TX</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/03.jpg" class="image"><img src="https://marksdiamonds.com/wp-content/uploads/2017/07/denver-skyline-1201x800.jpg"
+					 alt="" /></a>
+				<h2>Denver, CO</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/04.jpg" class="image"><img src="http://www.weedist.com/wp-content/uploads/2013/03/portland.jpg"
+					 alt="" /></a>
+				<h2>Portland, OR</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/05.jpg" class="image"><img src="https://www.meditationinmass.org/wp-content/uploads/2017/03/boston-boston-ma-massachusetts-massachusetts-usa-united-states-town-night-lighting-embankment-paving-stones-river-house-buildings-skyscraper.jpg"
+					 alt="" /></a>
+				<h2>Boston, MA</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/02.jpg" class="image"><img src="https://www.rentphilly.com/wp-content/uploads/2016/12/City-Hall-at-Night.jpg"
+					 alt="" /></a>
+				<h2>Philadelphia,PA</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/06.jpg" class="image"><img src="https://farm8.staticflickr.com/7532/15611597124_32f8ff2f2e_b.jpg"
+					 alt="" /></a>
+				<h2>Seattle, WA</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/07.jpg" class="image"><img src="https://images.fineartamerica.com/images-medium-large-5/kansas-city-skyline-at-night-kc-downtown-color-panorama-jon-holiday.jpg"
+					 alt="" /></a>
+				<h2>Kansas City, MO</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/01.jpg" class="image"><img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/san-diego-downtown-winter-night-jeff-chen.jpg"
+					 alt="" /></a>
+				<h2>San Diego, CA</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/08.jpg" class="image"><img src="http://images.raleighskyline.com/images/2015/late-summer-early-fall-2015-in-raleigh/raleigh_earlyfall_2015_raleighskyline.com_29.jpg"
+					 alt="" /></a>
+				<h2>Raleigh, NC</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/09.jpg" class="image"><img src="https://i.pinimg.com/736x/f8/1e/d0/f81ed07578cc752201c1103f49c4a0bf--anna-lee-winter-night.jpg"
+					 alt="" /></a>
+				<h2>Milwaukee, WI</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/09.jpg" class="image"><img src="http://www.city-data.com/forum/members/xavier500-562986-albums-minneapolis-pic53210-skyline-night-time.jpg"
+					 alt="" /></a>
+				<h2>Minneapolis, MN</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/09.jpg" class="image"><img src="https://atlantastartupbattle.com/wp-content/uploads/2014/09/atl-night-skyline-768x505.jpg"
+					 alt="" /></a>
+				<h2>Atlanta, GA</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/09.jpg" class="image"><img src="https://www.yourbachparty.com/wp-content/uploads/2017/08/Depositphotos_96335822_m-2015.jpg"
+					 alt="" /></a>
+				<h2>Charleston, SC</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/09.jpg" class="image"><img src="https://images.fineartamerica.com/images-medium-large/us-capitol-building-and-reflecting-pool-at-fall-night-2-val-black-russian-tourchin.jpg"
+					 alt="" /></a>
+				<h2>Washington, DC</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/09.jpg" class="image"><img src="https://ak3.picdn.net/shutterstock/videos/29123503/thumb/10.jpg"
+					 alt="" /></a>
+				<h2>Orlando, FL</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/09.jpg" class="image"><img src="http://res.cloudinary.com/culturemap-com/image/upload/q_auto/ar_4:3,c_fill,g_faces:center,w_1200/v1511984100/photos/107440_original.jpg"
+					 alt="" /></a>
+				<h2>Houston, TX</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/09.jpg" class="image"><img src="http://www.roseman.edu/wp-content/uploads/2014/02/1-salt-lake-city-utah-usa-utah-images.jpg"
+					 alt="" /></a>
+				<h2>Salt Lake City, UT</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/09.jpg" class="image"><img src="http://old.post-gazette.com/xtras/pghimages/images/downtown_nightshot_1024.jpg"
+					 alt="" /></a>
+				<h2>Pittsburgh, PA</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/09.jpg" class="image"><img src="https://c1.staticflickr.com/6/5205/5213137559_77eb9ca422_b.jpg"
+					 alt="" /></a>
+				<h2>Cleveland, OH</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/09.jpg" class="image"><img src="http://www.quickenloans.com/blog/wp-content/uploads/2015/09/Downtown_Ashville_Thomestate.com_.jpg"
+					 alt="" /></a>
+				<h2>Asheville, NC</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/09.jpg" class="image"><img src="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/A7cn0zH/skyline-of-new-orleans-across-the-mississippi-river-day-to-night-cityscape-time-lapse-building-logos-blurred-for-commercial-use_hxf3lkbb__F0013.png"
+					 alt="" /></a>
+				<h2>New Orleans, LA</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/09.jpg" class="image"><img src="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/A7cn0zH/nashville-tennessee-cityscape-skyline-across-the-cumberland-river-day-to-night-time-lapse-logos-blurred-for-commercial-use_bckzhp89_thumbnail-full13.png"
+					 alt="" /></a>
+				<h2>Nashville, TN</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/09.jpg" class="image"><img src="https://www.gatewayarch.com/wp-content/uploads/2017/12/homepage-banner.png"
+					 alt="" /></a>
+				<h2>Saint Louis, MO</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+			<article class="thumb">
+				<a href="images/fulls/09.jpg" class="image"><img src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/detroit-michigan-night-skyline-waterfront-reflection-panoramic-michelle-thompson.jpg"
+					 alt="" /></a>
+				<h2>Detroit, MI</h2>
+				<p>Nunc blandit nisi ligula magna sodales lectus elementum non. Integer id venenatis velit.</p>
+			</article>
+
+		</div>
+
+		<!--Map-->
+		<footer id="MapLink" class="panel">
+				<div id="map">
+				</div>
+		</footer>
+
+
+		<!--About Us-->
+		<footer id="AboutUsLink" class="panel">
+			<div class="inner split">
+				<div>
+					<section>
+						<h2>About Us</h2>
+						<p>Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum eget quis orci mattis
+							aliquet. Maecenas fringilla et ante at lorem et ipsum. Dolor nulla eu bibendum sapien. Donec non pharetra dui. Nulla
+							consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum.</p>
+					</section>
+				</div>
 			</div>
+		</footer>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
 
-	</body>
+
+		<!-- Contact Us -->
+		<footer id="FooterLink" class="panel">
+			<div class="inner split">
+				<div>
+					<section>
+						<h2>Magna feugiat sed adipiscing</h2>
+						<p>Nulla consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum eget quis orci mattis
+							aliquet. Maecenas fringilla et ante at lorem et ipsum. Dolor nulla eu bibendum sapien. Donec non pharetra dui. Nulla
+							consequat, ex ut suscipit rutrum, mi dolor tincidunt erat, et scelerisque turpis ipsum.</p>
+					</section>
+					<section>
+						<h2>Follow us on ...</h2>
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+						</ul>
+					</section>
+				</div>
+				<div>
+					<section>
+						<h2>Get in touch</h2>
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field half">
+									<input type="text" name="name" id="name" placeholder="Name" />
+								</div>
+								<div class="field half">
+									<input type="text" name="email" id="email" placeholder="Email" />
+								</div>
+								<div class="field">
+									<textarea name="message" id="message" rows="4" placeholder="Message"></textarea>
+								</div>
+							</div>
+							<ul class="actions">
+								<li><input type="submit" value="Send" class="primary" /></li>
+								<li><input type="reset" value="Reset" /></li>
+							</ul>
+						</form>
+					</section>
+				</div>
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.poptrox.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="assets/js/logic.js"></script>
+
+</body>
+
 </html>
