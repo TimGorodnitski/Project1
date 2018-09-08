@@ -1181,7 +1181,7 @@ input, select, textarea {
 			background-image: -webkit-linear-gradient(to left, rgba(31,34,36,0.35), rgba(31,34,36,0) 10em, rgba(31,34,36,0)), -webkit-linear-gradient(to right, rgba(31,34,36,0.35), rgba(31,34,36,0) 10em, rgba(31,34,36,0));
 			background-image: -ms-linear-gradient(to left, rgba(31,34,36,0.35), rgba(31,34,36,0) 10em, rgba(31,34,36,0)), -ms-linear-gradient(to right, rgba(31,34,36,0.35), rgba(31,34,36,0) 10em, rgba(31,34,36,0));
 			background-image: linear-gradient(to left, rgba(31,34,36,0.35), rgba(31,34,36,0) 10em, rgba(31,34,36,0)), linear-gradient(to right, rgba(31,34,36,0.35), rgba(31,34,36,0) 10em, rgba(31,34,36,0));
-			content: '';
+			/* content: ''; */
 			display: block;
 			height: 100%;
 			left: 0;

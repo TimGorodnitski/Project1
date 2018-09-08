@@ -7,12 +7,9 @@
 }
 
 .map{
-    height:50%;
-    width:50%;
-    margin:40px auto;
-    display: inline-block;
-    height:200px;
-
+    z-index: 20001;
+    overflow: hidden;
+    position: initial;
 }
 
 html, body {

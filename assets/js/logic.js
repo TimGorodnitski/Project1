@@ -21,4 +21,11 @@ function initMap() {
 
 };
 
+$(".thumb").on("click", function () {
+    console.log("thumb was clicked");
+    $(this).find(".map").css( "position", "initial" ).prependTo($(".poptrox-popup"));
+    $(".poptrox-popup").css("overflow", "hidden");
+
+});
+
 
