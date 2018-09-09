@@ -31,7 +31,7 @@ function initMap() {
             zoom: 12
         });
 
-        for (i = 0; i < bars.length; i++) {
+        for (i = 0; bars.length; i++) {
 
             var tempAddress = bars[i].street + ", " + bars[i].city;
 
