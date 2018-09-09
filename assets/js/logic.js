@@ -1,7 +1,9 @@
 var service;
 var infowindow;
 var geocoder;
-var address;
+var address = "1010 Westwood Blvd, Los Angeles, CA 90024";
+
+
 
 $.ajax({
     url: "http://beermapping.com/webservice/loccity/a75f6148bb9e67fc48410cb0be9bfe50/santa+monica,ca&s=json",
@@ -11,6 +13,21 @@ $.ajax({
 
 });
 
+
+
+$.ajax({
+    url: "https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyA_y6oBbAUYyXY4weFYWZ4iY5SzYTv72gw&address=" + address,
+    method: "get"
+}).then(function (response) {
+    console.log(response);
+
+});
+
+
+
+
+
+
 // San Diego Map
 function initMap() {
     var mapCenter1 = new google.maps.LatLng(32.7157, -117.1611);
@@ -18,7 +35,6 @@ function initMap() {
         center: mapCenter1,
         zoom: 12
     });
-
 
     // Philadelphia Map
     var mapCenter2 = new google.maps.LatLng(39.9526, -75.1652);
