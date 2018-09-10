@@ -108,32 +108,63 @@ function initMap() {
             zoom: 12
         });
 
-        for (i = 0; bars.length; i++) {
+
+
+
+
+
+
+
+
+        for (i = 0; i < bars.length; i++) {
 
             var tempAddress = bars[i].street + ", " + bars[i].city;
+            var tempI = 0;
 
             $.ajax({
                 url: "https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyA_y6oBbAUYyXY4weFYWZ4iY5SzYTv72gw&address=" + tempAddress,
                 method: "get"
             }).then(function (response2) {
 
-                console.log(response2);
                 var tempLat = response2.results[0].geometry.location.lat;
                 var tempLng = response2.results[0].geometry.location.lng;
-                console.log(tempLat);
+
+
+                var contentString = '<div id="content">' +
+                    "<p>Bar name: " + bars[tempI].name + "<br>" + bars[tempI].street + "<br>" + bars[tempI].url + "</p>" +
+                    '</div>';
+
+                var infowindow = new google.maps.InfoWindow({
+                    content: contentString
+                });
 
                 var marker = new google.maps.Marker({
-                    position: { lat: tempLat, lng: tempLng },
+                    position: {
+                        lat: tempLat,
+                        lng: tempLng
+                    },
                     map: map1
                 });
+
+                marker.addListener('click', function () {
+                    $(".poptrox-popup").find("p").html(contentString);
+
+
+                });
+
+                tempI++;
             })
         };
     });
+
+
+    $(".thumb").on("click", function () {
+        $(this).find(".map").css("position", "initial").appendTo($(".poptrox-popup"));
+        $(".poptrox-popup").css("overflow", "hidden");
+
+    });
+
+
+
+
 };
-
-$(".thumb").on("click", function () {
-    $(this).find(".map").css("position", "initial").appendTo($(".poptrox-popup"));
-    $(".poptrox-popup").css("overflow", "hidden");
-
-});
-
