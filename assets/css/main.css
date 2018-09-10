@@ -1258,7 +1258,7 @@ input, select, textarea {
 			background-image: -moz-linear-gradient(to top, rgba(16,16,16,0.45) 25%, rgba(16,16,16,0) 100%);
 			background-image: -webkit-linear-gradient(to top, rgba(16,16,16,0.45) 25%, rgba(16,16,16,0) 100%);
 			background-image: -ms-linear-gradient(to top, rgba(16,16,16,0.45) 25%, rgba(16,16,16,0) 100%);
-			background-image: linear-gradient(to top, rgba(16,16,16,0.45) 25%, rgba(16,16,16,0) 100%);
+			background-image: linear-gradient(to top, rgba(16,16,16,.7) 100%, rgba(16,16,16,0) 100%);
 			bottom: 0;
 			cursor: default;
 			left: 0;
@@ -1266,6 +1266,7 @@ input, select, textarea {
 			text-align: left;
 			width: 100%;
 			z-index: 2;
+			overflow: auto;
 		}
 
 			.poptrox-popup .caption h2, .poptrox-popup .caption h3, .poptrox-popup .caption h4, .poptrox-popup .caption h5, .poptrox-popup .caption h6 {
