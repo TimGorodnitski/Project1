@@ -31,27 +31,6 @@ function initMap() {
             zoom: 12
         });
 
-        for (i = 0; bars.length; i++) {
-
-            var tempAddress = bars[i].street + ", " + bars[i].city;
-
-            $.ajax({
-                url: "https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyA_y6oBbAUYyXY4weFYWZ4iY5SzYTv72gw&address=" + tempAddress,
-                method: "get"
-            }).then(function (response2) {
-
-                console.log(response2);
-                var tempLat = response2.results[0].geometry.location.lat;
-                var tempLng = response2.results[0].geometry.location.lng;
-                console.log(tempLat);
-
-                var marker = new google.maps.Marker({
-                    position: { lat: tempLat, lng: tempLng },
-                    map: map1
-                });
-            })
-        };
-
         // Philadelphia Map
         var mapCenter2 = new google.maps.LatLng(39.9526, -75.1652);
         map2 = new google.maps.Map(document.getElementById('map2'), {
@@ -128,6 +107,27 @@ function initMap() {
             center: mapCenter12,
             zoom: 12
         });
+
+        for (i = 0; bars.length; i++) {
+
+            var tempAddress = bars[i].street + ", " + bars[i].city;
+
+            $.ajax({
+                url: "https://maps.googleapis.com/maps/api/geocode/json?key=AIzaSyA_y6oBbAUYyXY4weFYWZ4iY5SzYTv72gw&address=" + tempAddress,
+                method: "get"
+            }).then(function (response2) {
+
+                console.log(response2);
+                var tempLat = response2.results[0].geometry.location.lat;
+                var tempLng = response2.results[0].geometry.location.lng;
+                console.log(tempLat);
+
+                var marker = new google.maps.Marker({
+                    position: { lat: tempLat, lng: tempLng },
+                    map: map1
+                });
+            })
+        };
     });
 };
 
