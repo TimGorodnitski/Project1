@@ -131,8 +131,8 @@
 
 					if ($body.hasClass('content-active')) {
 
-						event.preventDefault();
-						event.stopPropagation();
+						// event.preventDefault();
+						// event.stopPropagation();
 
 						$panels.trigger('---hide');
 
