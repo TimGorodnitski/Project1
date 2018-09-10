@@ -1,11 +1,17 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
 
-/*
-	Multiverse by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
+#map {
+	min-height: 200px;
+	min-width: 50px;
+	overflow: visible;
+}
+
+#mapLink {
+	padding: 25px;
+	overflow: auto;
+}
 
 .closer-class{
 
@@ -229,7 +235,7 @@ input, select, textarea {
 
 	strong, b {
 		color: #ffffff;
-		font-weight: 300;
+		font-weight: 200;
 	}
 
 	em, i {
@@ -1436,11 +1442,10 @@ input, select, textarea {
 		}
 
 /* Header */
-
 	body {
-		padding: 0 0 4em 0;
-	}
+		padding: 65px 0 0 0;
 
+	}
 	#header {
 		-moz-transform: translateY(0);
 		-webkit-transform: translateY(0);
@@ -1454,8 +1459,9 @@ input, select, textarea {
 		-ms-user-select: none;
 		-webkit-user-select: none;
 		background: #1f2224;
-		bottom: -1em;
-		height: 5em;
+		top: 0;
+		bottom: 0;
+		height: 4.5em;
 		left: 0;
 		line-height: 4em;
 		padding: 0 1.5em;
@@ -1475,7 +1481,7 @@ input, select, textarea {
 		#header h1 {
 			color: #a0a0a1;
 			display: inline-block;
-			font-size: 1em;
+			font-size: 2.5em;
 			line-height: 1;
 			margin: 0;
 			vertical-align: middle;
@@ -1491,7 +1497,7 @@ input, select, textarea {
 				}
 
 		#header nav {
-			position: absolute;
+			position: fixed;
 			right: 0;
 			top: 0;
 		}
@@ -1620,7 +1626,7 @@ input, select, textarea {
 				background-position: center;
 				background-repeat: no-repeat;
 				background-size: cover;
-				border: 0;
+				border: 3px solid black;
 				height: 100%;
 				left: 0;
 				position: absolute;
@@ -1630,12 +1636,13 @@ input, select, textarea {
 
 			#main .thumb > h2 {
 				pointer-events: none;
-				bottom: 1.875em;
-				font-size: 0.8em;
-				left: 2.1875em;
+				font-size: 1.25em;
 				margin: 0;
-				position: absolute;
+				position: relative;
 				z-index: 1;
+				top: 7%;
+				font-weight: bolder;
+				text-align: center;
 			}
 
 			#main .thumb > p {
