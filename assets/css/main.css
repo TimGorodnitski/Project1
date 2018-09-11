@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
 
 
+
 #map {
 	min-height: 200px;
 	min-width: 50px;
@@ -1443,7 +1444,7 @@ input, select, textarea {
 
 /* Header */
 	body {
-		padding: 65px 0 0 0;
+		padding: 66px 0 0 0;
 
 	}
 	#header {
@@ -1458,7 +1459,7 @@ input, select, textarea {
 		-moz-user-select: none;
 		-ms-user-select: none;
 		-webkit-user-select: none;
-		background: #1f2224;
+		background: #000000;
 		top: 0;
 		bottom: 0;
 		height: 4.5em;
@@ -1469,6 +1470,7 @@ input, select, textarea {
 		user-select: none;
 		width: 100%;
 		z-index: 10002;
+
 	}
 
 		body.is-preload #header {
@@ -1478,13 +1480,24 @@ input, select, textarea {
 			transform: translateY(-4em);
 		}
 
+		#slogan {
+			color: #ececec;
+			display: inline-block;
+			font-size: 1.25em;
+			font-style: italic;
+			line-height: 1;
+			margin: 0 0 0 20px;
+			vertical-align: middle;
+		}
+
 		#header h1 {
-			color: #a0a0a1;
+			color: #ececec;
 			display: inline-block;
 			font-size: 2.5em;
 			line-height: 1;
 			margin: 0;
 			vertical-align: middle;
+			-webkit-text-stroke: .75px rebeccapurple;
 		}
 
 			#header h1 a {
@@ -1518,7 +1531,7 @@ input, select, textarea {
 						-webkit-transition: background-color 0.5s ease;
 						-ms-transition: background-color 0.5s ease;
 						transition: background-color 0.5s ease;
-						border: 0;
+						font-size: 1.25em;
 						color: #ffffff;
 						display: inline-block;
 						letter-spacing: 0.1em;
@@ -1634,15 +1647,20 @@ input, select, textarea {
 				width: 100%;
 			}
 
+
 			#main .thumb > h2 {
 				pointer-events: none;
-				font-size: 1.25em;
-				margin: 0;
-				position: relative;
+				font-size: 1.4em;
+				position: absolute;
 				z-index: 1;
 				top: 7%;
+				left: 33%;
+				border: 7px solid black;
+				box-sizing: border-box;
 				font-weight: bolder;
-				text-align: center;
+				background-color: black;
+				-webkit-text-stroke: .75px rebeccapurple;
+				align-content: center;
 			}
 
 			#main .thumb > p {
@@ -2029,13 +2047,3 @@ input, select, textarea {
 
 		}
 
-/* Footer */
-
-	#footer .copyright {
-		color: #505051;
-		font-size: 0.9em;
-	}
-
-		#footer .copyright a {
-			color: inherit;
-		}
