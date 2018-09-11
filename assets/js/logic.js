@@ -19,7 +19,7 @@ function initMap() {
     });
     setTimeout(function () {
         $.ajax({
-            url: "http://beermapping.com/webservice/loccity/a75f6148bb9e67fc48410cb0be9bfe50/San+Diego&s=json",
+            url: "https://beermapping.com/webservice/loccity/a75f6148bb9e67fc48410cb0be9bfe50/San+Diego&s=json",
             method: "get"
         }).then(function (response1) {
             bars = response1;
@@ -67,7 +67,7 @@ function initMap() {
 
     setTimeout(function () {
         $.ajax({
-            url: "http://beermapping.com/webservice/loccity/a75f6148bb9e67fc48410cb0be9bfe50/Philadelphia&s=json",
+            url: "https://beermapping.com/webservice/loccity/a75f6148bb9e67fc48410cb0be9bfe50/Philadelphia&s=json",
             method: "get"
         }).then(function (response1) {
 
@@ -128,7 +128,7 @@ function initMap() {
 
     setTimeout(function () {
         $.ajax({
-            url: "http://beermapping.com/webservice/loccity/a75f6148bb9e67fc48410cb0be9bfe50/Denver&s=json",
+            url: "https://beermapping.com/webservice/loccity/a75f6148bb9e67fc48410cb0be9bfe50/Denver&s=json",
             method: "get"
         }).then(function (response1) {
 
@@ -189,7 +189,7 @@ function initMap() {
 
     setTimeout(function () {
         $.ajax({
-            url: "http://beermapping.com/webservice/loccity/a75f6148bb9e67fc48410cb0be9bfe50/Portland&s=json",
+            url: "https://beermapping.com/webservice/loccity/a75f6148bb9e67fc48410cb0be9bfe50/Portland&s=json",
             method: "get"
         }).then(function (response1) {
 
@@ -249,7 +249,7 @@ function initMap() {
 
     setTimeout(function () {
         $.ajax({
-            url: "http://beermapping.com/webservice/loccity/a75f6148bb9e67fc48410cb0be9bfe50/Boston&s=json",
+            url: "https://beermapping.com/webservice/loccity/a75f6148bb9e67fc48410cb0be9bfe50/Boston&s=json",
             method: "get"
         }).then(function (response1) {
 
@@ -308,7 +308,7 @@ function initMap() {
 
     setTimeout(function () {
         $.ajax({
-            url: "http://beermapping.com/webservice/loccity/a75f6148bb9e67fc48410cb0be9bfe50/Seattle&s=json",
+            url: "https://beermapping.com/webservice/loccity/a75f6148bb9e67fc48410cb0be9bfe50/Seattle&s=json",
             method: "get"
         }).then(function (response1) {
 
@@ -367,7 +367,7 @@ function initMap() {
 
     setTimeout(function () {
         $.ajax({
-            url: "http://beermapping.com/webservice/loccity/a75f6148bb9e67fc48410cb0be9bfe50/Kansas+City&s=json",
+            url: "https://beermapping.com/webservice/loccity/a75f6148bb9e67fc48410cb0be9bfe50/Kansas+City&s=json",
             method: "get"
         }).then(function (response1) {
 
@@ -425,7 +425,7 @@ function initMap() {
     });
     setTimeout(function () {
         $.ajax({
-            url: "http://beermapping.com/webservice/loccity/a75f6148bb9e67fc48410cb0be9bfe50/Raleigh&s=json",
+            url: "https://beermapping.com/webservice/loccity/a75f6148bb9e67fc48410cb0be9bfe50/Raleigh&s=json",
             method: "get"
         }).then(function (response1) {
 
@@ -484,7 +484,7 @@ function initMap() {
     });
     setTimeout(function () {
         $.ajax({
-            url: "http://beermapping.com/webservice/loccity/a75f6148bb9e67fc48410cb0be9bfe50/Milwaukee&s=json",
+            url: "https://beermapping.com/webservice/loccity/a75f6148bb9e67fc48410cb0be9bfe50/Milwaukee&s=json",
             method: "get"
         }).then(function (response1) {
 
@@ -543,7 +543,7 @@ function initMap() {
 
     setTimeout(function () {
         $.ajax({
-            url: "http://beermapping.com/webservice/loccity/a75f6148bb9e67fc48410cb0be9bfe50/New+York&s=json",
+            url: "https://beermapping.com/webservice/loccity/a75f6148bb9e67fc48410cb0be9bfe50/New+York&s=json",
             method: "get"
         }).then(function (response1) {
 
@@ -602,7 +602,7 @@ function initMap() {
 
     setTimeout(function () {
         $.ajax({
-            url: "http://beermapping.com/webservice/loccity/a75f6148bb9e67fc48410cb0be9bfe50/San+Francisco&s=json",
+            url: "https://beermapping.com/webservice/loccity/a75f6148bb9e67fc48410cb0be9bfe50/San+Francisco&s=json",
             method: "get"
         }).then(function (response1) {
 
@@ -662,7 +662,7 @@ function initMap() {
 
     setTimeout(function () {
         $.ajax({
-            url: "http://beermapping.com/webservice/loccity/a75f6148bb9e67fc48410cb0be9bfe50/Chicago&s=json",
+            url: "https://beermapping.com/webservice/loccity/a75f6148bb9e67fc48410cb0be9bfe50/Chicago&s=json",
             method: "get"
         }).then(function (response1) {
 
