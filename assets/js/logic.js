@@ -139,7 +139,7 @@ function initMap() {
   var mapCenter1 = new google.maps.LatLng(32.7157, -117.1611);
   map1 = new google.maps.Map(document.getElementById('map1'), {
     center: mapCenter1,
-    zoom: 12,
+    zoom: 11,
     //added map's night theme.
     styles: darkMapStyle,
     mapTypeControlOptions: {
@@ -173,23 +173,21 @@ function initMap() {
         }).then(function (response2) {
           var tempLat = response2.results[0].geometry.location.lat;
           var tempLng = response2.results[0].geometry.location.lng;
-          //bars.url returned incomplete url.
-
-          //added clickable links and bar rating
+          console.log(bars[tempI]);
           var contentString =
-          "<div id='content'><p><strong>" +
-          bars[tempI].name +
-          "<br>" +
-          "rating: " +
-          bars[tempI].overall +
-          "</strong><br>" +
-          "<a href=" +
-          bars[tempI].reviewlink +
-          " target='_blank'>|REVIEW|</a>" +
-          "<br>" +
-          "<a href=https://" +
-          bars[tempI].url +
-" target='_blank'> |WEBSITE| </a><br></p></div>"; 
+            "<div id='content'><p><strong>" +
+            bars[tempI].name +
+            "<br>" +
+            "Address: " +
+            bars[tempI].street +
+            "</strong><br>" +
+            "<a href=" +
+            bars[tempI].reviewlink +
+            " target='_blank'>|REVIEW|</a>" +
+            "<br>" +
+            "<a href=https://" +
+            bars[tempI].url +
+            " target='_blank'> |WEBSITE| </a><br></p></div>";
           var marker = new google.maps.Marker({
             position: {
               lat: tempLat,
@@ -215,7 +213,7 @@ function initMap() {
   var mapCenter2 = new google.maps.LatLng(39.9526, -75.1652);
   map2 = new google.maps.Map(document.getElementById('map2'), {
     center: mapCenter2,
-    zoom: 12,
+    zoom: 11,
     styles: darkMapStyle,
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
@@ -260,8 +258,8 @@ function initMap() {
           "<div id='content'><p><strong>" +
           bars[tempI].name +
           "<br>" +
-          "rating: " +
-          bars[tempI].overall +
+          "Address: " +
+          bars[tempI].street +
           "</strong><br>" +
           "<a href=" +
           bars[tempI].reviewlink +
@@ -269,7 +267,7 @@ function initMap() {
           "<br>" +
           "<a href=https://" +
           bars[tempI].url +
-" target='_blank'> |WEBSITE| </a><br></p></div>"; 
+          " target='_blank'> |WEBSITE| </a><br></p></div>";
 
           var marker = new google.maps.Marker({
             position: {
@@ -296,7 +294,7 @@ function initMap() {
   var mapCenter3 = new google.maps.LatLng(39.7392, -104.9903);
   map3 = new google.maps.Map(document.getElementById('map3'), {
     center: mapCenter3,
-    zoom: 12,
+    zoom: 11,
     styles: darkMapStyle,
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
@@ -340,8 +338,8 @@ function initMap() {
           "<div id='content'><p><strong>" +
           bars[tempI].name +
           "<br>" +
-          "rating: " +
-          bars[tempI].overall +
+          "Address: " +
+          bars[tempI].street +
           "</strong><br>" +
           "<a href=" +
           bars[tempI].reviewlink +
@@ -349,7 +347,7 @@ function initMap() {
           "<br>" +
           "<a href=https://" +
           bars[tempI].url +
-" target='_blank'> |WEBSITE| </a><br></p></div>"; 
+          " target='_blank'> |WEBSITE| </a><br></p></div>";
           var marker = new google.maps.Marker({
             position: {
               lat: tempLat,
@@ -375,7 +373,7 @@ function initMap() {
   var mapCenter4 = new google.maps.LatLng(45.5122, -122.6587);
   map4 = new google.maps.Map(document.getElementById('map4'), {
     center: mapCenter4,
-    zoom: 12,
+    zoom: 11,
     styles: darkMapStyle,
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
@@ -415,19 +413,19 @@ function initMap() {
           var tempLat = response2.results[0].geometry.location.lat;
           var tempLng = response2.results[0].geometry.location.lng;
           var contentString =
-          "<div id='content'><p><strong>" +
-          bars[tempI].name +
-          "<br>" +
-          "rating: " +
-          bars[tempI].overall +
-          "</strong><br>" +
-          "<a href=" +
-          bars[tempI].reviewlink +
-          ">|REVIEW|</a>" +
-          "<br>" +
-          "<a href=https://" +
-          bars[tempI].url +
-" target='_blank'> |WEBSITE| </a><br></p></div>"; 
+            "<div id='content'><p><strong>" +
+            bars[tempI].name +
+            "<br>" +
+            "rating: " +
+            bars[tempI].overall +
+            "</strong><br>" +
+            "<a href=" +
+            bars[tempI].reviewlink +
+            ">|REVIEW|</a>" +
+            "<br>" +
+            "<a href=https://" +
+            bars[tempI].url +
+            " target='_blank'> |WEBSITE| </a><br></p></div>";
 
           var marker = new google.maps.Marker({
             position: {
@@ -453,7 +451,7 @@ function initMap() {
   var mapCenter5 = new google.maps.LatLng(42.3601, -71.0589);
   map5 = new google.maps.Map(document.getElementById('map5'), {
     center: mapCenter5,
-    zoom: 12,
+    zoom: 11,
     styles: darkMapStyle,
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
@@ -493,19 +491,19 @@ function initMap() {
           var tempLat = response2.results[0].geometry.location.lat;
           var tempLng = response2.results[0].geometry.location.lng;
           var contentString =
-          "<div id='content'><p><strong>" +
-          bars[tempI].name +
-          "<br>" +
-          "rating: " +
-          bars[tempI].overall +
-          "</strong><br>" +
-          "<a href=" +
-          bars[tempI].reviewlink +
-          " target='_blank'>|REVIEW|</a>" +
-          "<br>" +
-          "<a href=https://" +
-          bars[tempI].url +
-" target='_blank'> |WEBSITE| </a><br></p></div>"; 
+            "<div id='content'><p><strong>" +
+            bars[tempI].name +
+            "<br>" +
+            "rating: " +
+            bars[tempI].overall +
+            "</strong><br>" +
+            "<a href=" +
+            bars[tempI].reviewlink +
+            " target='_blank'>|REVIEW|</a>" +
+            "<br>" +
+            "<a href=https://" +
+            bars[tempI].url +
+            " target='_blank'> |WEBSITE| </a><br></p></div>";
           var marker = new google.maps.Marker({
             position: {
               lat: tempLat,
@@ -529,7 +527,7 @@ function initMap() {
   var mapCenter6 = new google.maps.LatLng(47.6062, -122.3321);
   map6 = new google.maps.Map(document.getElementById('map6'), {
     center: mapCenter6,
-    zoom: 12,
+    zoom: 11,
     styles: darkMapStyle,
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
@@ -570,19 +568,19 @@ function initMap() {
           var tempLat = response2.results[0].geometry.location.lat;
           var tempLng = response2.results[0].geometry.location.lng;
           var contentString =
-          "<div id='content'><p><strong>" +
-          bars[tempI].name +
-          "<br>" +
-          "rating: " +
-          bars[tempI].overall +
-          "</strong><br>" +
-          "<a href=" +
-          bars[tempI].reviewlink +
-          " target='_blank'>|REVIEW|</a>" +
-          "<br>" +
-          "<a href=https://" +
-          bars[tempI].url +
-" target='_blank'> |WEBSITE| </a><br></p></div>"; 
+            "<div id='content'><p><strong>" +
+            bars[tempI].name +
+            "<br>" +
+            "rating: " +
+            bars[tempI].overall +
+            "</strong><br>" +
+            "<a href=" +
+            bars[tempI].reviewlink +
+            " target='_blank'>|REVIEW|</a>" +
+            "<br>" +
+            "<a href=https://" +
+            bars[tempI].url +
+            " target='_blank'> |WEBSITE| </a><br></p></div>";
 
           var marker = new google.maps.Marker({
             position: {
@@ -607,7 +605,7 @@ function initMap() {
   var mapCenter7 = new google.maps.LatLng(39.0997, -94.5786);
   map7 = new google.maps.Map(document.getElementById('map7'), {
     center: mapCenter7,
-    zoom: 12,
+    zoom: 11,
     styles: darkMapStyle,
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
@@ -648,19 +646,19 @@ function initMap() {
           var tempLat = response2.results[0].geometry.location.lat;
           var tempLng = response2.results[0].geometry.location.lng;
           var contentString =
-          "<div id='content'><p><strong>" +
-          bars[tempI].name +
-          "<br>" +
-          "rating: " +
-          bars[tempI].overall +
-          "</strong><br>" +
-          "<a href=" +
-          bars[tempI].reviewlink +
-          " target='_blank'>|REVIEW|</a>" +
-          "<br>" +
-          "<a href=https://" +
-          bars[tempI].url +
-" target='_blank'> |WEBSITE| </a><br></p></div>"; 
+            "<div id='content'><p><strong>" +
+            bars[tempI].name +
+            "<br>" +
+            "rating: " +
+            bars[tempI].overall +
+            "</strong><br>" +
+            "<a href=" +
+            bars[tempI].reviewlink +
+            " target='_blank'>|REVIEW|</a>" +
+            "<br>" +
+            "<a href=https://" +
+            bars[tempI].url +
+            " target='_blank'> |WEBSITE| </a><br></p></div>";
           var marker = new google.maps.Marker({
             position: {
               lat: tempLat,
@@ -684,7 +682,7 @@ function initMap() {
   var mapCenter8 = new google.maps.LatLng(35.7796, -78.6382);
   map8 = new google.maps.Map(document.getElementById('map8'), {
     center: mapCenter8,
-    zoom: 12,
+    zoom: 11,
     styles: darkMapStyle,
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
@@ -724,19 +722,19 @@ function initMap() {
           var tempLat = response2.results[0].geometry.location.lat;
           var tempLng = response2.results[0].geometry.location.lng;
           var contentString =
-          "<div id='content'><p><strong>" +
-          bars[tempI].name +
-          "<br>" +
-          "rating: " +
-          bars[tempI].overall +
-          "</strong><br>" +
-          "<a href=" +
-          bars[tempI].reviewlink +
-          " target='_blank'>|REVIEW|</a>" +
-          "<br>" +
-          "<a href=https://" +
-          bars[tempI].url +
-" target='_blank'> |WEBSITE| </a><br></p></div>"; 
+            "<div id='content'><p><strong>" +
+            bars[tempI].name +
+            "<br>" +
+            "rating: " +
+            bars[tempI].overall +
+            "</strong><br>" +
+            "<a href=" +
+            bars[tempI].reviewlink +
+            " target='_blank'>|REVIEW|</a>" +
+            "<br>" +
+            "<a href=https://" +
+            bars[tempI].url +
+            " target='_blank'> |WEBSITE| </a><br></p></div>";
 
           var marker = new google.maps.Marker({
             position: {
@@ -762,7 +760,7 @@ function initMap() {
   var mapCenter9 = new google.maps.LatLng(43.0389, -87.9065);
   map9 = new google.maps.Map(document.getElementById('map9'), {
     center: mapCenter9,
-    zoom: 12,
+    zoom: 11,
     styles: darkMapStyle,
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
@@ -802,19 +800,19 @@ function initMap() {
           var tempLat = response2.results[0].geometry.location.lat;
           var tempLng = response2.results[0].geometry.location.lng;
           var contentString =
-          "<div id='content'><p><strong>" +
-          bars[tempI].name +
-          "<br>" +
-          "rating: " +
-          bars[tempI].overall +
-          "</strong><br>" +
-          "<a href=" +
-          bars[tempI].reviewlink +
-          " target='_blank'>|REVIEW|</a>" +
-          "<br>" +
-          "<a href=https://" +
-          bars[tempI].url +
-" target='_blank'> |WEBSITE| </a><br></p></div>"; 
+            "<div id='content'><p><strong>" +
+            bars[tempI].name +
+            "<br>" +
+            "rating: " +
+            bars[tempI].overall +
+            "</strong><br>" +
+            "<a href=" +
+            bars[tempI].reviewlink +
+            " target='_blank'>|REVIEW|</a>" +
+            "<br>" +
+            "<a href=https://" +
+            bars[tempI].url +
+            " target='_blank'> |WEBSITE| </a><br></p></div>";
 
           var marker = new google.maps.Marker({
             position: {
@@ -839,7 +837,7 @@ function initMap() {
   var mapCenter10 = new google.maps.LatLng(40.7128, -74.0060);
   map10 = new google.maps.Map(document.getElementById('map10'), {
     center: mapCenter10,
-    zoom: 12,
+    zoom: 11,
     styles: darkMapStyle,
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
@@ -880,19 +878,19 @@ function initMap() {
           var tempLat = response2.results[0].geometry.location.lat;
           var tempLng = response2.results[0].geometry.location.lng;
           var contentString =
-          "<div id='content'><p><strong>" +
-          bars[tempI].name +
-          "<br>" +
-          "rating: " +
-          bars[tempI].overall +
-          "</strong><br>" +
-          "<a href=" +
-          bars[tempI].reviewlink +
-          " target='_blank'>|REVIEW|</a>" +
-          "<br>" +
-          "<a href=https://" +
-          bars[tempI].url +
-" target='_blank'> |WEBSITE| </a><br></p></div>"; 
+            "<div id='content'><p><strong>" +
+            bars[tempI].name +
+            "<br>" +
+            "rating: " +
+            bars[tempI].overall +
+            "</strong><br>" +
+            "<a href=" +
+            bars[tempI].reviewlink +
+            " target='_blank'>|REVIEW|</a>" +
+            "<br>" +
+            "<a href=https://" +
+            bars[tempI].url +
+            " target='_blank'> |WEBSITE| </a><br></p></div>";
           var marker = new google.maps.Marker({
             position: {
               lat: tempLat,
@@ -916,7 +914,7 @@ function initMap() {
   var mapCenter11 = new google.maps.LatLng(37.7749, -122.4194);
   map11 = new google.maps.Map(document.getElementById('map11'), {
     center: mapCenter11,
-    zoom: 12,
+    zoom: 11,
     styles: darkMapStyle,
     mapTypeControlOptions: {
       style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
@@ -957,19 +955,19 @@ function initMap() {
           var tempLat = response2.results[0].geometry.location.lat;
           var tempLng = response2.results[0].geometry.location.lng;
           var contentString =
-          "<div id='content'><p><strong>" +
-          bars[tempI].name +
-          "<br>" +
-          "rating: " +
-          bars[tempI].overall +
-          "</strong><br>" +
-          "<a href=" +
-          bars[tempI].reviewlink +
-          " target='_blank'>|REVIEW|</a>" +
-          "<br>" +
-          "<a href=https://" +
-          bars[tempI].url +
-" target='_blank'> |WEBSITE| </a><br></p></div>"; 
+            "<div id='content'><p><strong>" +
+            bars[tempI].name +
+            "<br>" +
+            "rating: " +
+            bars[tempI].overall +
+            "</strong><br>" +
+            "<a href=" +
+            bars[tempI].reviewlink +
+            " target='_blank'>|REVIEW|</a>" +
+            "<br>" +
+            "<a href=https://" +
+            bars[tempI].url +
+            " target='_blank'> |WEBSITE| </a><br></p></div>";
           var marker = new google.maps.Marker({
             position: {
               lat: tempLat,
@@ -994,7 +992,7 @@ function initMap() {
   var mapCenter12 = new google.maps.LatLng(41.8781, -87.6298);
   map12 = new google.maps.Map(document.getElementById('map12'), {
     center: mapCenter12,
-    zoom: 12,
+    zoom: 11,
     styles: darkMapStyle,
 
     mapTypeControlOptions: {
@@ -1035,19 +1033,19 @@ function initMap() {
           var tempLat = response2.results[0].geometry.location.lat;
           var tempLng = response2.results[0].geometry.location.lng;
           var contentString =
-          "<div id='content'><p><strong>" +
-          bars[tempI].name +
-          "<br>" +
-          "rating: " +
-          bars[tempI].overall +
-          "</strong><br>" +
-          "<a href=" +
-          bars[tempI].reviewlink +
-          " target='_blank'>|REVIEW|</a>" +
-          "<br>" +
-          "<a href=https://" +
-          bars[tempI].url +
-" target='_blank'> |WEBSITE| </a><br></p></div>"; 
+            "<div id='content'><p><strong>" +
+            bars[tempI].name +
+            "<br>" +
+            "rating: " +
+            bars[tempI].overall +
+            "</strong><br>" +
+            "<a href=" +
+            bars[tempI].reviewlink +
+            " target='_blank'>|REVIEW|</a>" +
+            "<br>" +
+            "<a href=https://" +
+            bars[tempI].url +
+            " target='_blank'> |WEBSITE| </a><br></p></div>";
 
           var marker = new google.maps.Marker({
             position: {
