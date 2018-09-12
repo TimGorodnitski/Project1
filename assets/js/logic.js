@@ -289,7 +289,7 @@ function initMap() {
       }
     });
 
-  }, 1000);
+  }, 1500);
 
 
   // Denver Map
@@ -368,7 +368,7 @@ function initMap() {
         });
       }
     });
-  }, 1500);
+  }, 2500);
 
 
 
@@ -448,7 +448,7 @@ function initMap() {
         });
       }
     });
-  }, 2000);
+  }, 3500);
 
 
   // Boston Map
@@ -526,7 +526,7 @@ function initMap() {
         });
       }
     });
-  }, 2500);
+  }, 4500);
 
   // Seattle Map
   var mapCenter6 = new google.maps.LatLng(47.6062, -122.3321);
@@ -605,7 +605,7 @@ function initMap() {
         });
       }
     });
-  }, 3000);
+  }, 5500);
 
   // Kansas City Map
   var mapCenter7 = new google.maps.LatLng(39.0997, -94.5786);
@@ -683,7 +683,7 @@ function initMap() {
         });
       }
     });
-  }, 3500);
+  }, 6500);
 
   // Raleigh Map
   var mapCenter8 = new google.maps.LatLng(35.7796, -78.6382);
@@ -761,7 +761,7 @@ function initMap() {
         });
       }
     });
-  }, 4000);
+  }, 7500);
 
 
   // Milwaukee Map
@@ -840,7 +840,7 @@ function initMap() {
         });
       }
     });
-  }, 4500);
+  }, 8500);
 
   // New York Map
   var mapCenter10 = new google.maps.LatLng(40.7128, -74.0060);
@@ -918,7 +918,7 @@ function initMap() {
         });
       }
     });
-  }, 5000);
+  }, 9500);
 
   // San Francisco Map
   var mapCenter11 = new google.maps.LatLng(37.7749, -122.4194);
@@ -996,7 +996,7 @@ function initMap() {
         });
       }
     });
-  }, 5500);
+  }, 10500);
 
 
   // Chicago Map
@@ -1076,7 +1076,7 @@ function initMap() {
         });
       }
     });
-  }, 6000);
+  }, 11500);
 };
 
 $(".thumb").on("click", function () {
