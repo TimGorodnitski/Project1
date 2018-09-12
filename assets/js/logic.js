@@ -131,6 +131,9 @@ var darkMapStyle = [{
 }
 
 ];
+// 
+
+var beer_icon = 'http://feedus.media/wp/wp-content/uploads/leaflet-maps-marker-icons/beer_pin-2.png';
 
 
 function initMap() {
@@ -193,7 +196,8 @@ function initMap() {
               lat: tempLat,
               lng: tempLng
             },
-            map: map1
+            map: map1,
+            icon: beer_icon
           });
 
           marker.addListener('click', function () {
@@ -274,7 +278,8 @@ function initMap() {
               lat: tempLat,
               lng: tempLng
             },
-            map: map2
+            map: map2,
+            icon: beer_icon
           });
 
           marker.addListener('click', function () {
@@ -353,7 +358,8 @@ function initMap() {
               lat: tempLat,
               lng: tempLng
             },
-            map: map3
+            map: map3,
+            icon: beer_icon
           });
 
           marker.addListener('click', function () {
@@ -416,8 +422,8 @@ function initMap() {
             "<div id='content'><p><strong>" +
             bars[tempI].name +
             "<br>" +
-            "rating: " +
-            bars[tempI].overall +
+            "Address: " +
+            bars[tempI].street +
             "</strong><br>" +
             "<a href=" +
             bars[tempI].reviewlink +
@@ -432,7 +438,8 @@ function initMap() {
               lat: tempLat,
               lng: tempLng
             },
-            map: map4
+            map: map4,
+            icon: beer_icon
           });
 
           marker.addListener('click', function () {
@@ -494,8 +501,8 @@ function initMap() {
             "<div id='content'><p><strong>" +
             bars[tempI].name +
             "<br>" +
-            "rating: " +
-            bars[tempI].overall +
+            "Address: " +
+            bars[tempI].street +
             "</strong><br>" +
             "<a href=" +
             bars[tempI].reviewlink +
@@ -509,7 +516,8 @@ function initMap() {
               lat: tempLat,
               lng: tempLng
             },
-            map: map5
+            map: map5,
+            icon: beer_icon
           });
 
           marker.addListener('click', function () {
@@ -571,8 +579,8 @@ function initMap() {
             "<div id='content'><p><strong>" +
             bars[tempI].name +
             "<br>" +
-            "rating: " +
-            bars[tempI].overall +
+            "Address: " +
+            bars[tempI].street +
             "</strong><br>" +
             "<a href=" +
             bars[tempI].reviewlink +
@@ -587,7 +595,8 @@ function initMap() {
               lat: tempLat,
               lng: tempLng
             },
-            map: map6
+            map: map6,
+            icon: beer_icon
           });
 
           marker.addListener('click', function () {
@@ -649,8 +658,8 @@ function initMap() {
             "<div id='content'><p><strong>" +
             bars[tempI].name +
             "<br>" +
-            "rating: " +
-            bars[tempI].overall +
+            "Address: "+
+            bars[tempI].street +
             "</strong><br>" +
             "<a href=" +
             bars[tempI].reviewlink +
@@ -664,7 +673,8 @@ function initMap() {
               lat: tempLat,
               lng: tempLng
             },
-            map: map7
+            map: map7,
+            icon: beer_icon
           });
 
           marker.addListener('click', function () {
@@ -725,8 +735,8 @@ function initMap() {
             "<div id='content'><p><strong>" +
             bars[tempI].name +
             "<br>" +
-            "rating: " +
-            bars[tempI].overall +
+            "Address: " +
+            bars[tempI].street +
             "</strong><br>" +
             "<a href=" +
             bars[tempI].reviewlink +
@@ -741,7 +751,8 @@ function initMap() {
               lat: tempLat,
               lng: tempLng
             },
-            map: map8
+            map: map8,
+            icon: beer_icon
           });
 
           marker.addListener('click', function () {
@@ -803,8 +814,8 @@ function initMap() {
             "<div id='content'><p><strong>" +
             bars[tempI].name +
             "<br>" +
-            "rating: " +
-            bars[tempI].overall +
+            "Address: " +
+            bars[tempI].street +
             "</strong><br>" +
             "<a href=" +
             bars[tempI].reviewlink +
@@ -819,7 +830,8 @@ function initMap() {
               lat: tempLat,
               lng: tempLng
             },
-            map: map9
+            map: map9,
+            icon: beer_icon
           });
 
           marker.addListener('click', function () {
@@ -881,8 +893,8 @@ function initMap() {
             "<div id='content'><p><strong>" +
             bars[tempI].name +
             "<br>" +
-            "rating: " +
-            bars[tempI].overall +
+            "Address: " +
+            bars[tempI].street +
             "</strong><br>" +
             "<a href=" +
             bars[tempI].reviewlink +
@@ -896,7 +908,8 @@ function initMap() {
               lat: tempLat,
               lng: tempLng
             },
-            map: map10
+            map: map10,
+            icon: beer_icon
           });
 
           marker.addListener('click', function () {
@@ -958,8 +971,8 @@ function initMap() {
             "<div id='content'><p><strong>" +
             bars[tempI].name +
             "<br>" +
-            "rating: " +
-            bars[tempI].overall +
+            "Address: " +
+            bars[tempI].street +
             "</strong><br>" +
             "<a href=" +
             bars[tempI].reviewlink +
@@ -973,7 +986,8 @@ function initMap() {
               lat: tempLat,
               lng: tempLng
             },
-            map: map11
+            map: map11,
+            icon: beer_icon
           });
 
           marker.addListener('click', function () {
@@ -1036,8 +1050,8 @@ function initMap() {
             "<div id='content'><p><strong>" +
             bars[tempI].name +
             "<br>" +
-            "rating: " +
-            bars[tempI].overall +
+            "Address: " +
+            bars[tempI].street +
             "</strong><br>" +
             "<a href=" +
             bars[tempI].reviewlink +
@@ -1052,7 +1066,8 @@ function initMap() {
               lat: tempLat,
               lng: tempLng
             },
-            map: map12
+            map: map12,
+            icon: beer_icon
           });
 
           marker.addListener('click', function () {
